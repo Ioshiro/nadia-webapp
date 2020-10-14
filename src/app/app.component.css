@@ -1,0 +1,173 @@
+
+.root__container {
+    width: 100%;
+    height: 98vh;
+    display: grid;
+    grid-template-columns: 0.2fr auto;
+    grid-template-rows: 5rem 80% auto;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  /*
+  ================
+      Header
+  ================
+  */
+  
+  /*
+      Slide Menu
+  = = = = = = = = =
+  */
+ 
+  .side-menu__container-active {
+    pointer-events: auto;
+  }
+  
+  .side-menu__container {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 1;
+    display: block;
+    top: 5rem;
+    left: 0;
+  }
+  
+  .slide-menu {
+    box-sizing: border-box;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    border-right: 2px solid black;
+  }
+  
+  .menu-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+  }
+
+  .menu-links{
+    list-style: none;
+    font-size: 3rem;
+  }
+
+  .link-active {
+    border-bottom: 1px solid gainsboro;
+  }
+
+  
+  /*Header*/
+  .main__header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 4rem;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+  }
+  
+  .lang-toggle__container{
+      justify-self: end;
+      margin-right: 2rem;
+      text-decoration: bold;
+  }
+
+  .lang-toggle__ita{
+      border-right: 1px solid black;
+  }
+
+  .lang-toggle__eng{
+    border-right: 1px solid black;
+}
+
+
+  
+  /*Content*/
+  .left__section {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    max-width: 5rem;
+  }
+  
+
+  
+  .logo__text {
+      font-size: 3.8rem;
+      letter-spacing: 0.1rem;
+      font-family: "adine-kirnberg", Arial, Helvetica, sans-serif;;
+      text-decoration: underline;
+      text-decoration-color: black;
+  }
+
+  
+
+  
+  /*
+  ================
+      Body
+  ================
+  */
+
+  .main__container{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column: 2;
+    align-self: center;
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  .main-container__bg {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background: white;
+  }
+
+  
+  /*
+  ================-
+      Footer
+  ================
+  */
+  .main__footer {
+    background: transparent;
+    align-self: end;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 3;
+    bottom: 1rem;
+    left: 1.5rem;
+    z-index: 100;
+  }
+  
+  .copyright__text {
+    letter-spacing: 0.1rem;
+    color: gainsboro;
+  }
+  
+  @media only screen and (max-width: 300px) {
+    .slide-menu {
+      width: 100%;
+    }
+  }
+  
