@@ -1,7 +1,7 @@
 <div class="root__container" >
-  
+
     <header class="main__header">
-  
+
       <div class="logo__text">
             Nadia Golysheva
       </div>
@@ -19,24 +19,28 @@
           <section class="menu-body">
             <ul class="menu-links" >
               <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="" routerLinkActive="link-active" >Home</li>
-              <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/works" routerLinkActive="link-active" >Sculture</li>
-              <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/bio" routerLinkActive="link-active">Biografia</li>
-              <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/contacts" routerLinkActive="link-active">Contatti</li>
-            </ul> 
+              <li class="menu-link">Sculture
+                <ul class="menu-links">
+                  <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/works" routerLinkActive="link-active" >Emozioni</li>
+                  <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/works" routerLinkActive="link-active" >Existentia</li>
+                </ul>
+              </li>
+              <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/about" routerLinkActive="link-active">Biografia</li>
+              <li class="menu-link" [routerLinkActiveOptions]="{exact:true}" routerLink="/contact" routerLinkActive="link-active">Contatti</li>
+            </ul>
           </section>
       </nav>
     </aside>
 
       <!-- Main Content -->
-  
+
       <!--<router-outlet></router-outlet>-->
       <main class="main__container">
-          <div class="main-container__bg"></div>
           <router-outlet></router-outlet>
       </main>
-  
+
       <!-- Footer -->
-  
+
       <footer class="main__footer">
           <small class="copyright__text">Copyright © 2020 Nadia Golysheva</small>
       </footer>
