@@ -6,7 +6,7 @@
     grid-template-columns: 20% 80%;
     grid-template-rows: 5rem 80% auto;
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   /*
@@ -119,9 +119,7 @@
   .logo__text {
       font-size: 3.8rem;
       letter-spacing: 0.1rem;
-      font-family: "adine-kirnberg", Arial, Helvetica, sans-serif;;
-      text-decoration: underline;
-      text-decoration-color: black;
+      font-family: "adine-kirnberg", Arial, Helvetica, sans-serif;
       margin-left: 4rem;
   }
 
@@ -142,7 +140,6 @@
     grid-column: 2;
     align-self: center;
     text-align: center;
-    font-size: 3rem;
   }
 
 
